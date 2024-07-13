@@ -102,8 +102,8 @@
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x0030034_ffffffff)
+			(plot_on_all_layers_selection 0x0001000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -130,13 +130,13 @@
 			(plotvalue yes)
 			(plotfptext yes)
 			(plotinvisibletext no)
-			(sketchpadsonfab no)
+			(sketchpadsonfab yes)
 			(subtractmaskfromsilk no)
-			(outputformat 1)
+			(outputformat 5)
 			(mirror no)
-			(drillshape 0)
+			(drillshape 2)
 			(scaleselection 1)
-			(outputdirectory "fabrication/gerbers/")
+			(outputdirectory "docs/images/")
 		)
 	)
 	(net 0 "")
@@ -2297,15 +2297,15 @@
 				)
 			)
 		)
-		(property "Value" "Antenna_Loop"
+		(property "Value" "NFC Antenna"
 			(at 27.375 2.45 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "d20813b0-8f44-4b03-a2a1-df548845180d")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
 				)
 			)
 		)
@@ -2348,10 +2348,23 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f7eb421d-9b45-48d9-9bd5-a97f75630000")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
 		(path "/2280c7f9-e31c-487e-8d2f-d3172dfa44cf")
 		(sheetname "Root")
 		(sheetfile "BusinessCard.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start 33.1 -0.7)
 			(end 33.941329 -1.996549)
@@ -2525,11 +2538,25 @@
 				(justify mirror)
 			)
 		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "02f56d4e-d669-4e1c-9df0-069b86fe6fbf")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/5b71b026-d1d9-45dd-862f-931a059f33a5")
 		(sheetname "Root")
 		(sheetfile "BusinessCard.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -2553,13 +2580,14 @@
 			(uuid "37a30641-985f-4afe-a3f5-8686f3807569")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.45 180)
+			(at -0.3 -1.45 180)
 			(layer "B.Fab")
 			(uuid "9164f8a5-9361-42fa-a3c1-0f528b27b8e6")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 				(justify mirror)
 			)
@@ -2594,15 +2622,15 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "ST25DV64K-IER8C3"
-			(at 0 -2.05 180)
+		(property "Value" "ST25DV04K"
+			(at -0.1 -1.4 0)
 			(unlocked yes)
 			(layer "B.Fab")
 			(uuid "fd4846c9-cdb1-46c0-adbb-d41bec47d6e4")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
 				)
 				(justify mirror)
 			)
@@ -2645,6 +2673,20 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "MPN" "ST25DV04K-IER6C3"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7907d903-a9b6-4999-8c77-cfe25e906b3b")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
 				)
 				(justify mirror)
 			)
@@ -2982,11 +3024,25 @@
 				(justify mirror)
 			)
 		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ffbe9ea3-2c9c-4939-9249-f43f64e19db4")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/496e9bf8-bec9-424a-8222-60767333fc8b")
 		(sheetname "Root")
 		(sheetfile "BusinessCard.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -3015,8 +3071,9 @@
 			(uuid "af849abd-1a80-42e3-a83f-68e6a0894f4e")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 				(justify mirror)
 			)
@@ -3039,26 +3096,29 @@
 		(tags "Logo Symbol OSHW")
 		(property "Reference" "REF**"
 			(at 0 0 180)
+			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "2706ad83-290a-4c99-aa40-554b3f9ddcbc")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.635 0.635)
+					(thickness 0.1016)
+					(italic yes)
 				)
 				(justify mirror)
 			)
 		)
 		(property "Value" "OSHW-Symbol_8.9x8mm_SilkScreen"
 			(at 0.75 0 180)
+			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "79123775-ea70-4ca4-b7fd-3863ca8b00aa")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
 				)
 				(justify mirror)
 			)
@@ -3216,14 +3276,14 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 0 -1.16 180)
+			(at 0.075 0.675 0)
 			(unlocked yes)
 			(layer "B.Fab")
 			(uuid "01b1bcca-cc5b-4cd1-b89a-28032c942a3d")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
 				)
 				(justify mirror)
 			)
@@ -3266,6 +3326,20 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "MPN" "GRM155B31E104KA87D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c808eb9b-1864-42b7-b854-dee4e25f69f2")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
 				)
 				(justify mirror)
 			)
@@ -3494,11 +3568,25 @@
 				(justify mirror)
 			)
 		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9840b3d1-b3bd-463e-a6b1-dc928d65f92e")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/515d4cc1-b46a-4e97-8123-40d64f1ac7ec")
 		(sheetname "Root")
 		(sheetfile "BusinessCard.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -3522,13 +3610,14 @@
 			(uuid "843a9d9c-ca78-4ef1-b8ec-e81000f3a028")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.45 180)
+			(at -0.875 -1.45 180)
 			(layer "B.Fab")
 			(uuid "93c74bd4-d7fb-45cb-848d-dd7144f21db4")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 				(justify mirror)
 			)
@@ -3549,26 +3638,30 @@
 		(at 150 64.75 180)
 		(property "Reference" "G***"
 			(at 0 0 180)
+			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "243acad7-50bf-4618-9b49-2bf03d7a02a8")
 			(effects
 				(font
-					(size 1.5 1.5)
-					(thickness 0.3)
+					(size 0.635 0.635)
+					(thickness 0.1016)
+					(italic yes)
 				)
 				(justify mirror)
 			)
 		)
 		(property "Value" "LOGO"
 			(at 0.75 0 180)
+			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "e818d67d-6db7-4ee5-b681-f5ff00a95c13")
 			(effects
 				(font
-					(size 1.5 1.5)
-					(thickness 0.3)
+					(size 0.635 0.635)
+					(thickness 0.1016)
+					(italic yes)
 				)
 				(justify mirror)
 			)
@@ -4009,11 +4102,25 @@
 				(justify mirror)
 			)
 		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e64afd67-9faf-43f5-a82b-40b81f315e23")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/5cf6623f-c2af-49b9-9dd9-0a5dc10569ec")
 		(sheetname "Root")
 		(sheetfile "BusinessCard.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -4037,13 +4144,14 @@
 			(uuid "117544eb-d1b9-4ceb-a13a-74a0b470487e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.45 180)
+			(at 1.525 -0.15 180)
 			(layer "B.Fab")
 			(uuid "bcfe0a66-3768-4dba-9b00-e5389908a6ee")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 				(justify mirror)
 			)
@@ -4135,11 +4243,25 @@
 				(justify mirror)
 			)
 		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f375bb6d-ea62-4c8f-ba64-63a88d571853")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/1333938b-444f-4908-bbcf-56478d23a10f")
 		(sheetname "Root")
 		(sheetfile "BusinessCard.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -4168,8 +4290,9 @@
 			(uuid "41223472-c2c2-4b2f-a632-c32cc41faeec")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 				(justify mirror)
 			)
@@ -4261,11 +4384,25 @@
 				(justify mirror)
 			)
 		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a3681f87-bc76-453a-a375-8e0c8359d5ee")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/f037d4f0-8b63-43f2-a171-b48b444a0034")
 		(sheetname "Root")
 		(sheetfile "BusinessCard.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -4289,13 +4426,14 @@
 			(uuid "d94aac1c-8d19-49f5-93ac-a35c2db0f6ef")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.45 180)
+			(at -0.7 -1.575 180)
 			(layer "B.Fab")
 			(uuid "ebd31a8d-bc3c-4fad-8b19-8fabe9305424")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 				(justify mirror)
 			)
@@ -4331,14 +4469,14 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at -0.6 0.4075 0)
+			(at -0.875 -0.65 0)
 			(unlocked yes)
 			(layer "B.Fab")
 			(uuid "8e2a0ca5-3d80-4ac4-b523-1e8974d8b7a7")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
 				)
 				(justify mirror)
 			)
@@ -4381,6 +4519,20 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "MPN" "GRM155B31E104KA87D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "fa54d91b-08ff-4824-811c-4281f69a3e6e")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
 				)
 				(justify mirror)
 			)
@@ -4609,11 +4761,25 @@
 				(justify mirror)
 			)
 		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0ef14942-58f1-4fe2-91d2-5bd110a607c2")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/8ab0373c-15fe-45c9-8646-168df200ebfd")
 		(sheetname "Root")
 		(sheetfile "BusinessCard.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -4642,8 +4808,9 @@
 			(uuid "d6bff191-ec39-4449-afe7-4d1cf0c00824")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 				(justify mirror)
 			)
@@ -4678,15 +4845,15 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "LED"
-			(at 0 -1.17 -90)
+		(property "Value" "Red"
+			(at 0.025 -0.925 90)
 			(unlocked yes)
 			(layer "B.Fab")
 			(uuid "7948776b-71d0-4c6e-b67f-5d00e040a8ec")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
 				)
 				(justify mirror)
 			)
@@ -4729,6 +4896,20 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "MPN" "XL-1005SURC"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6cb542e6-2db5-4a75-88de-2f59f93113ae")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
 				)
 				(justify mirror)
 			)
@@ -4914,14 +5095,14 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 0 -1.17 90)
+			(at 0.0575 0.925 90)
 			(unlocked yes)
 			(layer "B.Fab")
 			(uuid "25ab999b-87cf-4911-a7c2-1086272a84ca")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
 				)
 				(justify mirror)
 			)
@@ -4964,6 +5145,20 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "MPN" "RC0402FR-074K7L"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ae1dd308-2baf-415d-b571-a6491574d4d1")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
 				)
 				(justify mirror)
 			)
@@ -5136,14 +5331,14 @@
 			)
 		)
 		(property "Value" "39pF"
-			(at 0 -1.16 90)
+			(at 0 -0.75 90)
 			(unlocked yes)
 			(layer "B.Fab")
 			(uuid "5cb54f1c-7b5a-43e9-ae71-aea3632924d8")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
 				)
 				(justify mirror)
 			)
@@ -5186,6 +5381,20 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "MPN" "GRM1552C1H390JA01D"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9fd9c290-8558-4612-841a-5d2acda809ef")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
 				)
 				(justify mirror)
 			)
@@ -5345,26 +5554,29 @@
 		(tags "license graphic")
 		(property "Reference" "REF**"
 			(at 0 6.5 180)
+			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "e8d268ae-bfe8-4941-912a-fced366f01c9")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.635 0.635)
+					(thickness 0.1016)
+					(italic yes)
 				)
 				(justify mirror)
 			)
 		)
 		(property "Value" "Symbol_CreativeCommons_SilkScreenTop_Type2_Big"
 			(at 0 -6.5 180)
+			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "b0339116-d404-476c-9f2f-39f4c5c4bd4e")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
 				)
 				(justify mirror)
 			)
@@ -5630,11 +5842,25 @@
 				(justify mirror)
 			)
 		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "93ef4940-f42a-49bb-bb09-bc2dc1b0b19f")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/716ff3ce-4159-47b8-927b-ca8c73b7b253")
 		(sheetname "Root")
 		(sheetfile "BusinessCard.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -5658,13 +5884,14 @@
 			(uuid "119b3539-135e-4e28-9049-cc9b76a873ab")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.45 180)
+			(at 1.35 -0.65 180)
 			(layer "B.Fab")
 			(uuid "0773114a-9e97-4ee2-86bc-2a2c19be0f75")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 				(justify mirror)
 			)

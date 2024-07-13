@@ -1796,7 +1796,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Antenna_Loop"
+		(property "Value" "NFC Antenna"
 			(at 151.13 68.5801 90)
 			(effects
 				(font
@@ -1874,7 +1874,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ST25DV64K-IER8C3"
+		(property "Value" "ST25DV04K"
 			(at 108.204 78.232 0)
 			(effects
 				(font

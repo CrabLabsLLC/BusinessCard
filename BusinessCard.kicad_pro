@@ -26,9 +26,9 @@
         },
         "fab_line_width": 0.1,
         "fab_text_italic": false,
-        "fab_text_size_h": 1.0,
-        "fab_text_size_v": 1.0,
-        "fab_text_thickness": 0.15,
+        "fab_text_size_h": 0.5,
+        "fab_text_size_v": 0.5,
+        "fab_text_thickness": 0.1,
         "fab_text_upright": false,
         "other_line_width": 0.1,
         "other_text_italic": false,
@@ -58,13 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "clearance|183200000|79200000|db2efc3b-78ee-4ebe-b44a-319399af3a86|8fe86775-fed4-411c-8453-2fc81b041e4b",
-        "clearance|186130827|79999304|10e8b3f2-bdc6-4579-9a58-326777b424a4|77a2747b-a8bd-492a-80fc-2c9b300f2659",
-        "lib_footprint_mismatch|176622500|79547500|166aa41f-d236-4720-afaa-1aae07ddf997|00000000-0000-0000-0000-000000000000",
-        "solder_mask_bridge|183200000|79200000|8fe86775-fed4-411c-8453-2fc81b041e4b|db2efc3b-78ee-4ebe-b44a-319399af3a86",
-        "solder_mask_bridge|186130827|79999304|77a2747b-a8bd-492a-80fc-2c9b300f2659|10e8b3f2-bdc6-4579-9a58-326777b424a4"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -551,7 +545,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "fabrication/gerbers/",
+      "plot": "docs/images/",
       "pos_files": "fabrication/",
       "specctra_dsn": "",
       "step": "",
@@ -667,7 +661,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "docs/images/",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,

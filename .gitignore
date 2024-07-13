@@ -21,6 +21,7 @@ fabrication/
 *.zip
 *.json
 *.gbr
+*.lck
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -32,3 +33,4 @@ fabrication/
 # Exported BOM files
 *.xml
 *.csv
+*auto_saved_files#
