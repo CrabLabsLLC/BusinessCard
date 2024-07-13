@@ -1,5 +1,8 @@
 # Crab Labs Business Card
 
+![Card Front](docs/images/BusinessCardFront.jpg)
+![Card Back](docs/images/BusinessCardBack.jpg)
+
 ## Author
 
 Orion Serup
@@ -10,4 +13,4 @@ Orion Serup
 
 ## Dependencies
 
-To modify or inspect the source you need [KiCad > 8.0](https://www.kicad.org/download/) as we;l as the KiCad standard library
+To modify or inspect the source you need [KiCad > 8.0](https://www.kicad.org/download/) as well as the KiCad standard library
